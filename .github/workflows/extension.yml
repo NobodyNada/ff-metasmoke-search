@@ -30,4 +30,4 @@ jobs:
     - name: Upload extension
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      run: hub release edit -a web-ext-artifacts/*.xpi ${GITHUB_REF##*/}
+      run: hub release edit -m "" -a web-ext-artifacts/*.xpi ${GITHUB_REF##*/}
